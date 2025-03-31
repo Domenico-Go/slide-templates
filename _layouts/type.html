@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+
+{% assign pg = page.content | strip %}
+{% if pg != '' %}
+<div class="card mb-4">
+    <div class="card-body">
+        {{ page.content | markdownify }}
+    </div>
+</div>
+{% endif %}
+
+{% include slide_grid.html type=page.type %}

@@ -1,0 +1,43 @@
+{% assign type = include.type %}
+{% if type == '' %}
+    {% assign slides = site.slide.data %}
+{% else %}
+    {% assign base_type_path = site.slide.paths.base | append: "/" | append: type %}
+
+    {% comment %}Match del tipo in input con i path.{% endcomment %}
+    {% assign slides = "" | split: "" %} 
+    {% for slide in site.slide.data %}
+        {% assign p = slide.path | split: '/' %}
+
+        {% comment %}Facciamo uno "startswith".{% endcomment %}
+        {% assign last_path_index = p.size | minus: 2 %}
+        {% assign base_path_raw = p | slice: 0, last_path_index %}
+        {% assign base_path = base_path_raw | join: '/' %}
+
+        {% if base_type_path == base_path %}
+
+            {% comment %}Popoliamo l'array quando viene trovato un match.{% endcomment %}
+            {% assign slides = slides | push: slide %}
+
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if slides.size > 0 %}
+    <div class="row">
+      {% for slide in slides %}
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-container">
+          <a href="{{ slide.path }}" download>
+            <img src="/{{ slide.preview }}" alt="{{ slide.alt }}" loading="lazy" class="img-fluid rounded">
+            <div class="image-overlay rounded"></div>
+            <div class="filename">{{ slide.path | split: '/' | last }}</div>
+            <button class="btn btn-primary download-button">Download</button>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+{% else %}
+    <p>Nessun template presente per questa categoria</p>
+{% endif %}

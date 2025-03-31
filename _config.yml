@@ -1,0 +1,43 @@
+title: 'Slide template'
+
+collections:
+  type:
+    output: true
+
+slide:
+  paths:
+    base: 'assets/slides'
+
+  # Dopo l'aggiunta di pagine, aggiungi i tag qui.
+  tags:
+    - key: 'general'
+      value: 'Generale'
+      url: '/type/general'
+    - key: 'organigram'
+      value: 'Organigramma'
+      url: '/type/organigram'
+
+  data:
+    - 
+      # Ricordarsi di suddividere i template per tipo usando i nomi
+      # delle directory.
+
+      # Percorso file Powerpoint.
+      path: 'assets/slides/general/pptx/0.pptx'
+
+      # Percorso file immagine anteprima.
+      preview: 'assets/slides/general/preview/0.jpg'
+
+      # Testo alternativo all'immagine anteprima quando non presente.
+      alt: 'Slide 0'
+
+    - path: 'assets/slides/general/pptx/1.pptx'
+      preview: 'assets/slides/general/preview/1.jpg'
+      alt: 'Slide 1'
+
+    - path: 'assets/slides/organigram/pptx/2.pptx'
+      preview: 'assets/slides/organigram/preview/2.jpg'
+      alt: 'Slide 2'
+    - path: 'assets/slides/organigram/pptx/3.pptx'
+      preview: 'assets/slides/organigram/preview/3.jpg'
+      alt: 'Slide 3'
