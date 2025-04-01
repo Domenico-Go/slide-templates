@@ -17,7 +17,7 @@ h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden;
     width: 100%; /* Make the container responsive */
-   height: 250px /* Set a fixed height for the images */
+    height: 250px /* Set a fixed height for the images */
 }
 
 .image-container img {
@@ -78,4 +78,11 @@ pre {
     padding: var(--bs-gutter-x); /* Use Bootstrap's gutter for padding */
     background-color: var(--bs-light); /* Use Bootstrap's light background color */
     overflow: auto; /* Ensures that long lines are scrollable */
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px;  /* Distance from the right */
+    z-index: 1000; /* Ensure it is above other content */
 }

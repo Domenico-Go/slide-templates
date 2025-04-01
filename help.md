@@ -34,11 +34,15 @@ Queste istruzioni sono illustrate per esempi.
      della directory che viene utilizzato.
    </div>
 
-2. aggiornare l'oggetto `data` all'interno del file `_config.yml` in questo modo:
+2. creare un nuovo elemento nell'oggetto `data` all'interno del file
+   `_config.yml`, in questo modo:
 
    ```yaml
    slide:
      data:
+
+       # Elementi esistenti qui.
+
        - path: 'assets/slides/general/pptx/5.pptx'
          preview: 'assets/slides/general/preview/5.jpg'
          alt: 'Slide 5'
@@ -60,12 +64,15 @@ Queste istruzioni sono illustrate per esempi.
 
 ## Aggiunta nuovi tipi (categorie)
 
-1. aggiornare l'oggetto `tags` all'interno del file `_config.yml` in questo
-   modo:
+1. creare un nuovo elemento nell'oggetto `tags` all'interno del file
+   `_config.yml`, in questo modo:
 
    ```yaml
    slide:
      tags:
+
+       # Elementi esistenti qui.
+
        - key: 'calendar'
          value: 'Calendari'
    ```
@@ -143,3 +150,4 @@ Queste istruzioni sono illustrate per esempi.
    ```
 
 2. linkare il file dalla pagina principale o da altri file esistenti
+3. fare il commit Git

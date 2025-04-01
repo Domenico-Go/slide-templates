@@ -28,7 +28,7 @@
       {% for slide in slides %}
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="image-container">
-          <a href="{{ slide.path }}" download>
+          <a href="{{ site.baseurl }}/{{ slide.path }}" download>
             <img src="{{ site.baseurl }}/{{ slide.preview }}" alt="{{ slide.alt }}" loading="lazy" class="img-fluid rounded">
             <div class="image-overlay rounded"></div>
             <div class="filename">{{ slide.path | split: '/' | last }}</div>
