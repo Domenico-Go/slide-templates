@@ -1,5 +1,6 @@
 ---
 layout: default
+title: 'Tutorial'
 ---
 
 Queste istruzioni sono illustrate per esempi.
@@ -133,7 +134,8 @@ Queste istruzioni sono illustrate per esempi.
 
    ```markdown
    ---                                                                             
-   layout: default                                                                 
+   layout: default
+   title: 'Il mio titolo'
    ---
    # Titolo
 
