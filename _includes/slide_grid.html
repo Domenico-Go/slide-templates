@@ -29,7 +29,7 @@
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="image-container">
           <a href="{{ slide.path }}" download>
-            <img src="/{{ slide.preview }}" alt="{{ slide.alt }}" loading="lazy" class="img-fluid rounded">
+            <img src="{{ site.baseurl }}/{{ slide.preview }}" alt="{{ slide.alt }}" loading="lazy" class="img-fluid rounded">
             <div class="image-overlay rounded"></div>
             <div class="filename">{{ slide.path | split: '/' | last }}</div>
             <button class="btn btn-primary download-button">Download</button>

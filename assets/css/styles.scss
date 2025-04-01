@@ -1,3 +1,8 @@
 ---
 ---
-@use 'base' as base;
+/* New way for Jekyll versions once gitHub catches up.
+ * `import` is in-fact deprecated.
+ */
+// @use 'base' as base;
+
+@import 'base';

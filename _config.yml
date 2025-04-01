@@ -1,4 +1,6 @@
-title: 'Slide template'
+title: 'Slide templates'
+
+baseurl: '/slide-templates'
 
 collections:
   type:
@@ -8,7 +10,7 @@ slide:
   paths:
     base: 'assets/slides'
 
-  # Dopo l'aggiunta di pagine, aggiungi i tag qui.
+  # Dopo l'aggiunta di pagine "type", aggiungi i tag qui.
   tags:
     - key: 'general'
       value: 'Generale'
