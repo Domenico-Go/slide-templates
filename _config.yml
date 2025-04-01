@@ -5,19 +5,20 @@ baseurl: '/slide-templates'
 collections:
   type:
     output: true
+  slides:
+    output: true
 
 slide:
   paths:
     base: 'assets/slides'
 
   # Dopo l'aggiunta di pagine "type", aggiungi i tag qui.
+  # Il campo `key` viene usato nell'URL.
   tags:
     - key: 'general'
       value: 'Generale'
-      url: '/type/general'
     - key: 'organigram'
       value: 'Organigramma'
-      url: '/type/organigram'
 
   data:
     - 
@@ -33,6 +34,8 @@ slide:
       # Testo alternativo all'immagine anteprima quando non presente.
       alt: 'Slide 0'
 
+      # In futuro si potranno aggiungere altri campi in base alle necessità.
+
     - path: 'assets/slides/general/pptx/1.pptx'
       preview: 'assets/slides/general/preview/1.jpg'
       alt: 'Slide 1'
@@ -40,6 +43,16 @@ slide:
     - path: 'assets/slides/organigram/pptx/2.pptx'
       preview: 'assets/slides/organigram/preview/2.jpg'
       alt: 'Slide 2'
+
     - path: 'assets/slides/organigram/pptx/3.pptx'
       preview: 'assets/slides/organigram/preview/3.jpg'
       alt: 'Slide 3'
+
+# File da non servire nel sito.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
