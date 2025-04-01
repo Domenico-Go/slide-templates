@@ -71,3 +71,11 @@ h2, h3, h4, h5, h6 {
 .image-container:hover .filename {
     display: block; /* Show filename on hover */
 }
+
+pre {
+    border: 1px solid var(--bs-border); /* Bootstrap's border color */
+    border-radius: var(--bs-border-radius); /* Bootstrap's border radius */
+    padding: var(--bs-gutter-x); /* Use Bootstrap's gutter for padding */
+    background-color: var(--bs-light); /* Use Bootstrap's light background color */
+    overflow: auto; /* Ensures that long lines are scrollable */
+}

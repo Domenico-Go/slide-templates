@@ -2,6 +2,8 @@ title: 'Slide templates'
 
 baseurl: '/slide-templates'
 
+highlighter: rouge
+
 collections:
   type:
     output: true
