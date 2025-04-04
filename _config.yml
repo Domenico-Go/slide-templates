@@ -51,7 +51,7 @@ slide:
       alt: 'Slide 3'
 
     - path: 'assets/slides/organigram/pptx/OrganigrammaPROVA.pptx'
-      preview: 'assets/slides/organigram/preview/PROVA1.jpg'
+      preview: 'assets/slides/organigram/preview/PROVA1.png'
       alt: 'OrganigrammaPROVA'
 
 # File da non servire nel sito.
