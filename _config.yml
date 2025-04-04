@@ -50,6 +50,10 @@ slide:
       preview: 'assets/slides/organigram/preview/3.jpg'
       alt: 'Slide 3'
 
+    - path: 'assets/slides/organigram/pptx/OrganigrammaPROVA.pptx'
+      preview: 'assets/slides/organigram/preview/PROVA1.jpg'
+      alt: 'OrganigrammaPROVA'
+
 # File da non servire nel sito.
 exclude:
   - Gemfile
